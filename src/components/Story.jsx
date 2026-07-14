@@ -82,7 +82,7 @@ function Story() {
     </p>
 
     <p>
-      My friend <strong>Vijaya</strong> once asked you
+      My chelli <strong>Vijaya</strong> once asked you
       if you would like to talk to me.
     </p>
 
