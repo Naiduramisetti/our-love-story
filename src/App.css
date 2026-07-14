@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#050816;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* Background */
+
+.app{
+  min-height:100vh;
+  background:linear-gradient(180deg,#111b3d 0%,#050816 100%);
+  position:relative;
+}
+
+/* Stars */
+
+.stars{
+  position:fixed;
+  inset:0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+    radial-gradient(2px 2px at 100px 80px,#fff,transparent),
+    radial-gradient(2px 2px at 200px 180px,#fff,transparent),
+    radial-gradient(2px 2px at 350px 100px,#fff,transparent),
+    radial-gradient(2px 2px at 500px 250px,#fff,transparent),
+    radial-gradient(2px 2px at 700px 150px,#fff,transparent);
+  background-repeat:repeat;
+  background-size:800px 400px;
+  animation:starsMove 60s linear infinite;
+  opacity:.7;
+  z-index:0;
+}
+
+@keyframes starsMove{
+  from{
+    transform:translateY(0);
+  }
+  to{
+    transform:translateY(-400px);
+  }
+}
+
+/* Hero */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+  position:relative;
+  z-index:2;
+}
+
+.glass{
+  width:760px;
+  max-width:95%;
+  padding:70px;
+  text-align:center;
+  border-radius:30px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:
+      0 20px 80px rgba(0,0,0,.45),
+      0 0 40px rgba(255,77,136,.2);
+}
+
+.title{
+  font-family:'Great Vibes',cursive;
+  font-size:85px;
+  color:white;
+}
+
+.name{
+  margin-top:15px;
+  font-size:60px;
+  color:#ff5d98;
+  text-shadow:0 0 25px rgba(255,93,152,.6);
+}
+
+.subtitle{
+  margin-top:30px;
+  font-size:22px;
+  color:#ececec;
+  line-height:1.8;
+}
+
+.startBtn{
+  margin-top:45px;
+  padding:18px 45px;
+  border:none;
+  border-radius:50px;
+  background:linear-gradient(135deg,#ff5d98,#ff2d75);
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  transition:.35s;
+  font-weight:600;
+}
+
+.startBtn:hover{
+  transform:translateY(-6px) scale(1.05);
+  box-shadow:0 0 35px rgba(255,93,152,.7);
+}
+
+/* Story */
+
+.story{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:80px 30px;
+  text-align:center;
+}
+
+.story h2{
+  font-family:'Great Vibes',cursive;
+  font-size:70px;
+  color:#ff6ea5;
+  margin-bottom:30px;
+}
+
+.story p{
+  max-width:800px;
+  font-size:22px;
+  line-height:2;
+  color:#ddd;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.title{
+font-size:60px;
+}
+
+.name{
+font-size:42px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.story h2{
+font-size:48px;
+}
+
+.story p{
+font-size:18px;
+}
+
+.glass{
+padding:45px 25px;
+}
+
+.startBtn{
+width:100%;
+}
+
+}

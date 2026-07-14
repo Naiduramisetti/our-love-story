@@ -1,0 +1,55 @@
+.gallery{
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.gallery h1{
+
+font-size:55px;
+
+margin-bottom:50px;
+
+color:#ff6ea8;
+
+}
+
+.favorite-photo{
+
+width:320px;
+
+border-radius:25px;
+
+box-shadow:0 20px 60px rgba(255,105,180,.35);
+
+transition:.4s;
+
+}
+
+.favorite-photo:hover{
+
+transform:scale(1.05);
+
+}
+
+.favorite-text{
+
+max-width:700px;
+
+margin:50px auto;
+
+}
+
+.favorite-text p{
+
+font-size:22px;
+
+line-height:2;
+
+margin:18px 0;
+
+color:white;
+
+}

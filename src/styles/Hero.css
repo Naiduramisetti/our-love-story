@@ -1,0 +1,305 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(180deg,#0b1026,#121b43,#090d1f);
+}
+
+/* Stars */
+
+.stars{
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+    radial-gradient(2px 2px at 200px 120px,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 350px 200px,#fff,transparent),
+    radial-gradient(2px 2px at 700px 150px,#fff,transparent),
+    radial-gradient(2px 2px at 900px 500px,#fff,transparent),
+    radial-gradient(2px 2px at 1200px 200px,#fff,transparent),
+    radial-gradient(2px 2px at 1400px 600px,#fff,transparent);
+    animation:twinkle 6s infinite alternate;
+    opacity:.7;
+}
+
+@keyframes twinkle{
+
+0%{
+opacity:.3;
+}
+
+100%{
+opacity:1;
+}
+
+}
+
+/* Moon */
+
+.moon{
+
+position:absolute;
+
+top:80px;
+
+right:120px;
+
+width:130px;
+
+height:130px;
+
+border-radius:50%;
+
+background:#fff;
+
+box-shadow:
+0 0 60px #ffffff,
+0 0 120px rgba(255,255,255,.6);
+
+}
+
+/* Glass Card */
+
+.glass-card{
+
+width:900px;
+
+max-width:92%;
+
+padding:70px 50px;
+
+border-radius:30px;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(16px);
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 20px 70px rgba(0,0,0,.4);
+
+z-index:5;
+
+}
+
+/* Heading */
+
+.hero-title{
+
+font-size:95px;
+
+font-family:'Great Vibes',cursive;
+
+margin-bottom:10px;
+
+color:white;
+
+}
+
+.hero-name{
+
+font-size:70px;
+
+color:#ff6fa8;
+
+margin-bottom:30px;
+
+text-shadow:0 0 25px rgba(255,105,180,.7);
+
+}
+
+.hero-subtitle{
+
+font-size:24px;
+
+line-height:1.8;
+
+color:#ececec;
+
+margin-bottom:45px;
+
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.journey-btn{
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4f92;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:
+0 10px 35px rgba(255,79,146,.5);
+
+}
+
+.journey-btn:hover{
+
+transform:translateY(-6px);
+
+background:#ff2c79;
+
+}
+
+.music-btn{
+
+padding:18px 40px;
+
+border-radius:50px;
+
+border:2px solid white;
+
+background:transparent;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.music-btn:hover{
+
+background:white;
+
+color:#111;
+
+}
+
+/* Floating Hearts */
+
+.floating-heart{
+
+position:absolute;
+
+font-size:40px;
+
+animation:floatHeart 5s infinite ease-in-out;
+
+}
+
+.heart1{
+
+left:10%;
+
+top:25%;
+
+}
+
+.heart2{
+
+right:15%;
+
+top:35%;
+
+animation-delay:1.5s;
+
+}
+
+.heart3{
+
+left:20%;
+
+bottom:20%;
+
+animation-delay:3s;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero-title{
+
+font-size:60px;
+
+}
+
+.hero-name{
+
+font-size:40px;
+
+}
+
+.hero-subtitle{
+
+font-size:18px;
+
+}
+
+.glass-card{
+
+padding:40px 25px;
+
+}
+
+.journey-btn,
+.music-btn{
+
+width:100%;
+
+font-size:18px;
+
+}
+
+}
