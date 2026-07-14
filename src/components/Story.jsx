@@ -127,7 +127,7 @@ function Story() {
   <h2>Our First Meeting 🌸</h2>
 
   <p className="chapter-date">
-    📅 08 April 2026 &nbsp; | &nbsp; 📍 A Moment I'll Never Forget
+    📅 08 june 2026 &nbsp; | &nbsp; 📍 A Moment I'll Never Forget
   </p>
 
   <img
