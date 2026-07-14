@@ -149,7 +149,7 @@ function Story() {
 
     <p>
       We met for the very first time on
-      <strong> 08 April 2026 </strong>
+      <strong> 08 june 2026 </strong>
       during Vijaya's grandparents' ceremony.
     </p>
 
